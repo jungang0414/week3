@@ -435,6 +435,8 @@ a {
     /* 超出寬度則換行 */
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 1296px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -532,7 +534,7 @@ a {
         font-size: 24px;
         font-weight: 700;
         line-height: 1.2;
-        
+
         color: #3b3b3b;
         padding-bottom: 16px;
     }
@@ -645,10 +647,13 @@ a {
     }
 
     .sample-list-item {
+        width: 95%;
+        max-width: 100%;
         margin: 10px auto;
     }
 
-    .price-title, .sample-title {
+    .price-title,
+    .sample-title {
         flex-direction: row;
         text-align: center;
 
@@ -700,9 +705,9 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-}
+    }
 
-/* 
+    /* 
     .footer {
         justify-content: center;
         flex-direction: column;
