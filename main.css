@@ -683,6 +683,10 @@ a {
         }
     }
 
+    .question-card {
+        width: 333px;
+    }
+
     .question-card h4 {
         font-size: 20px;
         font-weight: 700;
