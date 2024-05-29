@@ -208,6 +208,10 @@ a {
   align-items: center;
 }
 
+.navbar-btn {
+  display: none;
+}
+
 .leftArrow {
   content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true);
 }
@@ -641,6 +645,21 @@ a {
 
   .header-navbar {
     display: none;
+  }
+
+  .navbar-btn {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    span {
+      font-size: 40px;
+    }
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
   }
 
   /* 服務流程 */
