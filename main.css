@@ -1,0 +1,725 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom css */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1296px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.myheader {
+    background: #fefefe;
+    padding: 28px 0;
+    border-bottom: 1px solid #F1F1F1;
+    position: sticky;
+    top: 0;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1296px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: -2;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    li {
+        padding: 4px 8px;
+        position: relative;
+    }
+}
+
+.menu_link {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.service-items {
+    padding: 120px 0;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftArrow {
+    content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true);
+}
+
+.rightArrow {
+    content: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true);
+}
+
+.title-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 16px;
+    }
+}
+
+.frame {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true);
+    border-radius: 16px;
+    padding: 20px 30px;
+    width: 306px;
+    height: 306px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.span {
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+}
+
+/* 流程區塊 */
+
+.service-process {
+    color: #fff;
+    background: linear-gradient(135deg, #000 0%, #000 50%, #1E1E1E 50%, #1E1E1E 100%);
+    padding-bottom: 5%;
+}
+
+.service-title-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    padding-top: 9%;
+    padding-bottom: 10%;
+}
+
+/* 線條沿用上方class left right arrow*/
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-sop-lists {
+    text-align: center;
+
+    li {
+        display: flex;
+        align-items: center;
+        background-color: #3B3B3B;
+        border: 1px solid #919191;
+        border-radius: 4px;
+        padding: 1rem 10px;
+        padding-left: 0;
+        width: 655px;
+    }
+
+    p {
+        margin: 0;
+        color: #E9E9E9;
+    }
+}
+
+.sop-num {
+    font-size: 4.5rem;
+    padding: 0 3rem;
+    color: #919191;
+}
+
+.sop-txt {
+    padding: 8px;
+    text-align: justify;
+}
+
+.txt-title {
+    font-size: 28px;
+    width: 112px;
+}
+
+/*google icon color*/
+.material-symbols-outlined {
+    color: #666666;
+}
+
+
+/* 價格區間 */
+
+.price-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 16px;
+        color: #3b3b3b;
+    }
+
+    /* ? */
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+/* 價格表*/
+
+.price {
+    padding-bottom: 80px;
+}
+
+.price-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*超出寬度則自動換行*/
+    flex-wrap: wrap;
+}
+
+.price-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #f0f0f0;
+    box-shadow: #f0f0f0 0px 5px 15px;
+    margin: 10px;
+    padding: 20px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    p {
+        display: inline;
+        font-size: 20px;
+        color: #5b5b5b;
+    }
+
+    .strong {
+        font-weight: bold;
+        color: #1e1e1e;
+    }
+
+    .up {
+        font-size: 12px;
+        color: #5b5b5b;
+    }
+}
+
+/* sample 樣本 */
+
+.sample {
+    background: #fafafa;
+}
+
+.sample-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 16px;
+        color: #3b3b3b;
+    }
+
+    /* ? */
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.sample-lists {
+    display: flex;
+    /* 超出寬度則換行 */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.sample-list-item {
+    margin-bottom: 20px;
+
+    img {
+        width: 626px;
+        border-radius: 10px;
+    }
+
+    .content {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 8px;
+        color: #5b5b5b;
+    }
+
+    p {
+        /* 預設字型大小、粗體 為16px、400 可以不用再設定 */
+        font-size: 16px;
+        font-weight: 400;
+        color: #989898;
+    }
+
+    .tag {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+
+        li {
+            margin-right: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            color: #3b3b3b;
+            background: #f1f1f1;
+            text-decoration: none;
+        }
+    }
+}
+
+/* footer */
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.question-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 16px;
+        color: #3b3b3b;
+    }
+
+    /* ? */
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.question-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.question-card {
+    width: 524px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 16px;
+
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        
+        color: #3b3b3b;
+        padding-bottom: 16px;
+    }
+
+    p {
+        font-size: 20px;
+        /* 瀏覽器預設樣式
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left; 
+        */
+        color: #5b5b5b;
+    }
+}
+
+.footer {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+    background-size: cover;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1296px;
+    margin: auto;
+    display: flex;
+    padding: 80px 120px;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    img {
+        width: 101px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    a {
+        font-size: 20px;
+        line-height: 1.2;
+        color: #919191;
+    }
+}
+
+.footer-lists {
+    gap: 24px;
+}
+
+.icon-tag-b {
+    width: 306px;
+    padding: 8px 24px;
+    gap: 8px;
+    border-radius: 8px;
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.icon-tag-b p {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.icon-tag-w {
+    width: 306px;
+    padding: 8px 24px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #c1c1c1;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+/* RWD */
+
+@media screen and (max-width: 768px) {
+    .myheader {
+        padding: 10px;
+    }
+
+    .header-logo {
+        position: static;
+    }
+
+    .header-navbar {
+        display: none;
+    }
+
+    /* 價格、樣本區間 */
+    .price-list-item {
+        width: 95%;
+        max-width: 100%;
+        margin: 5px auto;
+    }
+
+    .sample-list-item {
+        margin: 10px auto;
+    }
+
+    .price-title, .sample-title {
+        flex-direction: row;
+        text-align: center;
+
+        h1 {
+            margin: 10px 10px;
+        }
+    }
+
+    .question {
+        margin-bottom: 80px;
+    }
+
+    .question-title {
+        margin-bottom: 40px;
+
+        img {
+            width: 56px;
+            height: 6px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+
+    .question-card h4 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .footer-content {
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 12px;
+    }
+
+    .footer-logo {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+/* 
+    .footer {
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 12px;
+    }
+
+    .footer-logo {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} */
