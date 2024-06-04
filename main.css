@@ -273,13 +273,11 @@ a {
 
 .service-process {
   color: #fff;
-  background: linear-gradient(
-    135deg,
-    #000 0%,
-    #000 50%,
-    #1e1e1e 50%,
-    #1e1e1e 100%
-  );
+  background: linear-gradient(135deg,
+      #000 0%,
+      #000 50%,
+      #1e1e1e 50%,
+      #1e1e1e 100%);
   padding-bottom: 5%;
 }
 
@@ -634,7 +632,7 @@ a {
 
 /* RWD */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .myheader {
     padding: 10px;
   }
@@ -652,6 +650,7 @@ a {
     border: 0;
     background-color: transparent;
     cursor: pointer;
+
     span {
       font-size: 40px;
     }
@@ -720,6 +719,7 @@ a {
   .sample-lists {
     justify-content: center;
   }
+
   .sample-list-item {
     width: 95%;
     max-width: 100%;
@@ -756,7 +756,7 @@ a {
   }
 
   .question-card {
-    width: 333px;
+    max-width: 333px;
   }
 
   .question-card h4 {
